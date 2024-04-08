@@ -190,6 +190,7 @@ body {
 
 /* Alteração da barra de rolagem abaixo */
 
+
 /* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
     width: 20px; /* Largura para a barra vertical */
