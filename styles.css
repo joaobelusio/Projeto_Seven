@@ -59,12 +59,20 @@ body {
     margin: 0 1vw;
 }
 
+/* Estilo para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+    .fullscreen-background {
+        background-image: url('caminho/para/Background_SEVEN_Mobile.webp'); /* Caminho para imagem de fundo mobile */
+        /* As demais propriedades de background-size, background-position e background-repeat são herdadas do estilo padrão */
+    }
+}
+
 /* Estilo para a div que será o container da imagem de fundo */
 .fullscreen-background {
     position: relative;
     width: 100%;
     min-height: calc(100vh - 4.56vh); /* Subtrai a altura do navbar para preencher o restante da tela */
-    background: url('backgroundSEVEN_direitosReservados.png') center center no-repeat;
+    background: url('backgroundSEVEN_direitosReservados.webp') center center no-repeat;
     background-size: cover;
 }
 
@@ -75,7 +83,7 @@ body {
     position: relative;
     width: 100%;
     min-height: calc(100vh - 4.56vh); /* Ajusta a altura da div */
-    background: url('backgroundSEVEN_direitosReservados.png') center center no-repeat;
+    background: url('backgroundSEVEN_direitosReservados.webp') center center no-repeat;
     background-size: cover;
     display: flex; /* Utiliza Flexbox para posicionar o SVG */
     justify-content: flex-end; /* Alinha horizontalmente para a direita */
@@ -136,6 +144,7 @@ body {
     pointer-events: none; /* Desativa eventos de cliques no elemento */
 }
 
+
 /* Abaixo media query para a página inicial, para resolução menores que 1500pixels de largura: */
 @media (max-width: 1512px) {
     .fullscreen-background {
@@ -155,25 +164,12 @@ body {
     display: block; /* Garante que a imagem seja tratada como bloco para permitir a centralização */
   }
   
-  .dreams-text {
-    font-family: 'Raleway', sans-serif; /* Utilizando a fonte Raleway */
-    font-size: 5vw; /* Altura da fonte proporcional a 5% da altura da página */
-    color: #fff; /* Cor branca para o texto */
-    text-align: center; /* Alinha o texto horizontalmente ao centro */
-    position: absolute; /* Posicionamento absoluto dentro da sua div pai */
-    width: 100%; /* Faz com que o elemento tenha a largura total da div */
-    top: calc(88% - 5vh); /* Posiciona o texto acima do SVG, ajustando o valor conforme necessário */
-    pointer-events: none; /* Desativa eventos de cliques no elemento */
-    transform: translateY(-5%); /* Desloca o texto para cima baseado na altura do próprio texto */
-    letter-spacing: 0.02em; /* Ajusta o espaçamento entre os caracteres */
-
-}
 
 .fullscreen-background {
     position: relative;
     width: 100%;
     min-height: calc(100vh - 4.56vh); /* Subtrai a altura do navbar para preencher o restante da tela */
-    background: url('backgroundSEVEN_direitosReservados.png') no-repeat;
+    background: url('backgroundSEVEN_direitosReservados.webp') no-repeat;
     background-size: cover;
     background-position: 37% center; /* Posiciona o background 10% mais à direita */
 }
@@ -182,8 +178,13 @@ body {
       margin-right: 10%;
       max-width: 90%; /* Limita a largura do conteúdo para prevenir vazamento */
       max-height: 100%;
-      font-size: 1.7vw;
+      font-size: 100%;
+      margin: 15px;
       
+    }
+
+    .dreams-text {
+        margin: 15px;
     }
 
   }
