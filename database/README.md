@@ -44,7 +44,7 @@ Para mais detalhes sobre cada tabela e como importar o modelo para uma ferrament
 
 ## Contribuindo
 
-Para contribuir com o modelo de banco de dados, por favor, siga as diretrizes de contribuição no arquivo CONTRIBUTING.md principal deste repositório.
+No momento não é possível contribuir com o projeto de forma direta, mas sugestões sempre serão bem-vindas.
 
 ---
 
